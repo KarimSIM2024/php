@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Common Header -->
+    <div class="header">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="roadmap.html">Road Map</a>
+            <a href="registration.html">Registration Form</a>
+            <a href="https://iti.gov.eg">Contact</a>
+        </div>
+        <div class="logo-container">
+            <img src="/day1/src/assets/ITI_logo.png" alt="ITI Information Technology Institute" width="100">
+        </div>
+    </div>
+
+    <!-- Main Content / Form -->
+    <div class="form-container">
+        <h3 class="form-title">Register - Create Account</h3>
+        <div class="compulsory-note" style="background-color: #e4f0eb;">
+            Field marked with <span class="required-star">*</span> are compulsory fields
+        </div>
+
+        <form action="#" method="POST">
+            <div class="form-group">
+                <div class="form-label"><span class="required-star">*</span>Your Name</div>
+                <div class="form-input"><input type="text" name="name" required></div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-label"><span class="required-star">*</span>E-Mail ID</div>
+                <div class="form-input"><input type="email" name="email"  required></div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-label">Alternate E-Mail ID</div>
+                <div class="form-input"><input type="email" name="alt_email" ></div>
+            </div>
+
+            <!-- Fixed Phone Section -->
+            <div class="form-group">
+                <div class="form-label">Your Phone</div>
+                <div class="form-input" style="display: flex; gap: 8px; align-items: flex-end;">
+                    
+                    <!-- Country Code Block -->
+                    <div style="display: flex; flex-direction: column; width: 25%;">
+                        <span style="font-size: 10px; color: #666; margin-bottom: 3px;">Country Code</span>
+                        <input type="text" name="country_code" style="padding: 6px; border: 1px solid #a6a6a6; width: 100%; box-sizing: border-box;">
+                    </div>
+                    
+                    <span style="margin-bottom: 6px; color: #333;">-</span>
+                    
+                    <!-- City Code Block -->
+                    <div style="display: flex; flex-direction: column; width: 25%;">
+                        <span style="font-size: 10px; color: #666; margin-bottom: 3px;">City Code</span>
+                        <input type="text" name="city_code" style="padding: 6px; border: 1px solid #a6a6a6; width: 100%; box-sizing: border-box;">
+                    </div>
+                    
+                    <span style="margin-bottom: 6px; color: #333;">-</span>
+                    
+                    <!-- Phone Number Block -->
+                    <div style="display: flex; flex-direction: column; width: 50%;">
+                        <span style="font-size: 10px; color: #666; margin-bottom: 3px;">Phone Number</span>
+                        <input type="text" name="phone_number" style="padding: 6px; border: 1px solid #a6a6a6; width: 100%; box-sizing: border-box;">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-label">Mobile Phone</div>
+                <div class="form-input"><input type="text" name="mobile"></div>
+            </div>
+
+            <div class="form-group align-top">
+                <div class="form-label"><span class="required-star">*</span>Your Postal Address</div>
+                <div class="form-input"><textarea name="address" rows="4" required></textarea></div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-label"><span class="required-star">*</span>Country</div>
+                <div class="form-input">
+                    <select name="country" required>
+                        <option value="">------------- Select One -------------</option>
+                        <option value="EG">Egypt</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-label"><span class="required-star">*</span>Password</div>
+                <div class="form-input"><input type="password" name="password" required></div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-label"><span class="required-star">*</span>Re - Enter Password</div>
+                <div class="form-input"><input type="password" name="confirm_password" required></div>
+            </div>
+
+            <div class="form-actions">
+                <input type="checkbox" name="terms" required> I accept the <a href="#" style="font-weight: bold;">Terms
+                    of Use</a><br><br>
+                <button type="submit">Continue >></button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Common Footer -->
+    <div class="footer">
+        Copyright 2021 by Noha Salah &reg;. All Rights Reserved.
+    </div>
+
+</body>
+
+</html>

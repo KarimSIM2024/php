@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px 40px; 
+    padding: 0;
+    color: #333;
+}
+
+/* Header Styles */
+.header {
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; 
+    height: 60px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.logo-container {
+    background-color: white;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+    font-size: 12px;
+    font-weight: bold;
+    color: #1A3B70;
+}
+
+/* Roadmap */
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.col {
+    width: 48%;
+}
+
+/* Form Styles */
+.form-container {
+    width: 70%;
+    margin: 40px auto;
+    border: 1px solid #cce0e0;
+    background-color: #f2f9f9; 
+    padding: 30px;
+}
+
+.form-title {
+    color: #3a7a7a;
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.compulsory-note {
+    border: 1px dashed #8fbaba;
+    padding: 8px;
+    font-size: 12px;
+    margin-bottom: 25px;
+    color: #444;
+}
+
+.required-star {
+    color: red;
+}
+.form-group {
+    display: flex;
+    margin-bottom: 5px; 
+    align-items: stretch; 
+}
+
+/* Label Background Block */
+.form-label {
+    width: 35%;
+    text-align: right;
+    padding: 10px 15px;
+    font-size: 13px;
+    color: #3a7a7a;
+    background-color: #e4f0eb; 
+    margin-right: 15px; 
+    
+    display: flex;
+    align-items: center; 
+    justify-content: flex-end; 
+    box-sizing: border-box;
+}
+
+
+.align-top .form-label {
+    align-items: flex-start; 
+}
+
+.form-input {
+    width: 60%;
+    display: flex;
+    align-items: center; 
+}
+
+.form-input input[type="text"],
+.form-input input[type="email"],
+.form-input input[type="password"],
+.form-input select,
+.form-input textarea {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #a6a6a6;
+    box-sizing: border-box;
+}
+
+/* Phone Layout Fix */
+.phone-labels {
+    font-size: 10px;
+    color: #666;
+    margin-bottom: 3px;
+}
+
+.phone-group {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Adds space around the hyphens */
+}
+
+.phone-group input {
+    padding: 6px;
+    border: 1px solid #a6a6a6;
+}
+
+.phone-group .cc { width: 20%; }
+.phone-group .city { width: 20%; }
+.phone-group .num { width: 50%; }
+
+.form-actions {
+    text-align: center;
+    margin-top: 25px;
+}
