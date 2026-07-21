@@ -1,17 +1,17 @@
-/* General Styles */
+/* General */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 20px 40px; 
+    margin: 20px 40px;
     padding: 0;
     color: #333;
 }
 
-/* Header Styles */
+/* Header */
 .header {
     background-color: #333333;
     display: flex;
     justify-content: space-between;
-    align-items: stretch; 
+    align-items: stretch;
     height: 60px;
 }
 
@@ -61,12 +61,12 @@ body {
     width: 48%;
 }
 
-/* Form Styles */
+/* Form */
 .form-container {
     width: 70%;
     margin: 40px auto;
     border: 1px solid #cce0e0;
-    background-color: #f2f9f9; 
+    background-color: #f2f9f9;
     padding: 30px;
 }
 
@@ -87,37 +87,38 @@ body {
 .required-star {
     color: red;
 }
+
 .form-group {
     display: flex;
-    margin-bottom: 5px; 
-    align-items: stretch; 
+    margin-bottom: 5px;
+    align-items: stretch;
 }
 
-/* Label Background Block */
+
 .form-label {
     width: 35%;
     text-align: right;
     padding: 10px 15px;
     font-size: 13px;
     color: #3a7a7a;
-    background-color: #e4f0eb; 
-    margin-right: 15px; 
-    
+    background-color: #e4f0eb;
+    margin-right: 15px;
+
     display: flex;
-    align-items: center; 
-    justify-content: flex-end; 
+    align-items: center;
+    justify-content: flex-end;
     box-sizing: border-box;
 }
 
 
 .align-top .form-label {
-    align-items: flex-start; 
+    align-items: flex-start;
 }
 
 .form-input {
     width: 60%;
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
 
 .form-input input[type="text"],
@@ -131,7 +132,7 @@ body {
     box-sizing: border-box;
 }
 
-/* Phone Layout Fix */
+
 .phone-labels {
     font-size: 10px;
     color: #666;
@@ -141,7 +142,7 @@ body {
 .phone-group {
     display: flex;
     align-items: center;
-    gap: 8px; /* Adds space around the hyphens */
+    gap: 8px;
 }
 
 .phone-group input {
@@ -149,9 +150,17 @@ body {
     border: 1px solid #a6a6a6;
 }
 
-.phone-group .cc { width: 20%; }
-.phone-group .city { width: 20%; }
-.phone-group .num { width: 50%; }
+.phone-group .cc {
+    width: 20%;
+}
+
+.phone-group .city {
+    width: 20%;
+}
+
+.phone-group .num {
+    width: 50%;
+}
 
 .form-actions {
     text-align: center;
