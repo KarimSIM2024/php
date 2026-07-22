@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 - continue JS </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .note {
+            color: #666;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #5c5cff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        button:hover {
+            background-color: #4a4acc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Tip of the Day</h2>
+        <div id="tipDisplay"></div>
+
+        <h2>Current Date & Time</h2>
+        <button onclick="showDate()">Show Date</button>
+        <div class="box" id="dateDisplay"></div>
+
+    </div>
+
+    <script>
+        // Task 1: Tip 
+        let jsTips = [
+            "prompt() always returns a string. Use Number() to convert it.",
+            "Arrays always start counting from index 0.",
+            "Use console.log() to test your code and find bugs.",
+            "Use 'let' for variables that change, and 'const' for fixed values.",
+            "Math.random() generates a decimal number between 0 and 1.",
+            "Use the .length property to find out how many items are in an array.",
+            "An alert() stops the rest of the page from loading until clicked.",
+            "A 'for' loop is the best way to print array items.",
+            "Don't forget the parentheses () when you call a function!",
+            "You can use document.write() to print text directly on the page."
+        ];
+
+        let randomIndex = Math.floor(Math.random() * jsTips.length);
+        document.getElementById("tipDisplay").innerText = jsTips[randomIndex];
+
+        // Task 2: Display  date and time 
+        function showDate() {
+            let currentDate = new Date();
+            document.getElementById("dateDisplay").innerText = currentDate.toLocaleString();
+        }
+
+        // Task 3: Count how many times a number is found
+        function countNumber(arr, targetNum) {
+            let count = 0;
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] === targetNum) {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        console.log("Task 3 ");
+        let numbersArray = [5, 2, 8, 5, 1, 5, 9];
+        console.log("Array: [5, 2, 8, 5, 1, 5, 9]");
+        console.log("Number 5 is found: " + countNumber(numbersArray, 5) + " times");
+
+        // Task 4: Remove a specific character from array
+        function removeCharacter(arr, charToRemove) {
+            let newArray = [];
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] !== charToRemove) {
+                    newArray.push(arr[i]);
+                }
+            }
+            return newArray;
+        }
+
+        console.log("\n Task 4");
+        let charsArray = ['A', 'b', 'C', 'b', 'D'];
+        console.log("Original Array: ['A', 'b', 'C', 'b', 'D']");
+        console.log("After removing 'b':", removeCharacter(charsArray, 'b'));
+
+        // Task 5: Get the maximum number in an array
+        function getMaximum(arr) {
+            let maxNumber = arr[0];
+            for (let i = 1; i < arr.length; i++) {
+                if (arr[i] > maxNumber) {
+                    maxNumber = arr[i];
+                }
+            }
+            return maxNumber;
+        }
+
+        console.log("\n Task 5");
+        let scores = [10, 55, 3, 99, 21];
+        console.log("Array: [10, 55, 3, 99, 21]");
+        console.log("Maximum number is: " + getMaximum(scores));
+
+    </script>
+</body>
+
+</html>
