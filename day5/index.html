@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5 - Main Lab</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f9;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        input {
+            padding: 8px;
+            margin: 5px 0;
+            width: 250px;
+        }
+
+        button {
+            padding: 8px 15px;
+            background: #5c5cff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background: #4a4acc;
+        }
+
+        a {
+            color: #5c5cff;
+            cursor: pointer;
+            text-decoration: underline;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h3>1. Letters Only Textbox</h3>
+        <input type="text" id="lettersOnly" placeholder="Type letters only...">
+    </div>
+
+    <div class="box">
+        <h3>2. Local Time Clock</h3>
+        <button id="startClockBtn">Start Clock</button>
+        <h2 id="clockDisplay">--:--:--</h2>
+    </div>
+
+    <div class="box">
+        <h3>3. Advertisement Window</h3>
+        <a id="openAdBtn">Open Ad (Wait 3 seconds)</a>
+        <a id="closeAdBtn">Close Ad</a>
+    </div>
+
+    <div class="box">
+        <h3>4. Login Form</h3>
+        <form action="./welcome.html" method="GET">
+            <input type="text" id="usernameInput" name="username" value="Enter your user name here"><br>
+            <input type="password" name="password" placeholder="Password"><br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div class="box">
+        <h3>Bonus: Graduation Countdown</h3>
+        <p style="font-size: 18px; font-weight: bold; color: #d9534f;" id="countdownDisplay">Calculating...</p>
+    </div>
+
+    <div class="box">
+    <h3>Bonus: Better Unload Task</h3>
+    <a href="https://google.com" id="leaveLink">Click here to leave the page</a>
+</div>
+    <script src="main.js"></script>
+</body>
+
+</html>
